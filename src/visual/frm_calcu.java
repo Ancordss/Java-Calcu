@@ -505,6 +505,11 @@ public class frm_calcu extends javax.swing.JFrame implements ActionListener {
 
     private void sm_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sm_nuevoActionPerformed
         // TODO add your handling code here:
+        try {
+                File.insert("Nuevo");
+                } catch (IOException ex) {
+                    Logger.getLogger(frm_calcu.class.getName()).log(Level.SEVERE, null, ex);
+                }   
         frm_calcu fm = new frm_calcu();
         fm.show();
     }//GEN-LAST:event_sm_nuevoActionPerformed
